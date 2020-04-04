@@ -5,7 +5,7 @@
   <groupId>com.zheng.book</groupId>
   <artifactId>booksystem</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>booksystem</name>
   <url>http://maven.apache.org</url>
@@ -29,6 +29,8 @@
 			<artifactId>spring-core</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+
+				
 		
 		<!-- pring IOC的基础实现，包含访问配置文件、创建和管理bean等 -->
 		<dependency>

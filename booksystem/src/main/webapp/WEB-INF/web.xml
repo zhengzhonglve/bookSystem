@@ -7,23 +7,14 @@
       <servlet-name>dispatcher</servlet-name>
       <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
           <init-param>
-          <param-name>contextConfigLocation</param-name>
+             <param-name>contextConfigLocation</param-name>
           <param-value>classpath:springContext.xml</param-value>
       </init-param>
       <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
       <servlet-name>dispatcher</servlet-name>
-      <url-pattern>*.action</url-pattern>
+      <url-pattern>*.do</url-pattern>
   </servlet-mapping>
-  <!-- Spring容器启动监听器 -->
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-    <!--  
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring-mybatis.xml</param-value>
-	</context-param>
-	 -->
+    
 </web-app>  
